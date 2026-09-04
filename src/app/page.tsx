@@ -5,6 +5,10 @@ import { ArrowRight } from "lucide-react";
 import { PageContainer } from "@/components/common/page-container";
 import { SearchBar } from "@/components/common/search-bar";
 import { SectionHeading } from "@/components/common/section-heading";
+import { QuickPlannerCTA } from "@/components/common/quick-planner-cta";
+import { HiddenGems } from "@/components/common/hidden-gems";
+import { HowItWorks } from "@/components/common/how-it-works";
+import { BusinessEmpowerment } from "@/components/common/business-empowerment";
 import { DestinationCard } from "@/components/destination/destination-card";
 import { ExperienceCard } from "@/components/experience/experience-card";
 import { buttonVariants } from "@/components/ui/button";
@@ -20,7 +24,7 @@ export default function HomePage() {
     <main>
       <section className="relative isolate min-h-[34rem] overflow-hidden sm:min-h-[40rem]">
         <Image
-          src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=2000&q=80"
+          src="/images/hero/hero-home.png"
           alt=""
           fill
           priority
@@ -46,6 +50,8 @@ export default function HomePage() {
           <SearchBar className="mt-8 max-w-2xl" />
         </PageContainer>
       </section>
+
+      <QuickPlannerCTA />
 
       <section className="py-16 sm:py-20">
         <PageContainer>
@@ -111,23 +117,30 @@ export default function HomePage() {
         </PageContainer>
       </section>
 
+      <HiddenGems />
+
+      <HowItWorks />
+
+      <BusinessEmpowerment />
+
       <section className="pb-16 sm:pb-20">
         <PageContainer>
           <div className="rounded-3xl bg-primary px-6 py-14 text-center text-primary-foreground sm:px-12">
-            <h2 className="text-primary-foreground">Plan your next journey</h2>
-            <p className="mx-auto mt-3 max-w-xl text-primary-foreground/80">
-              Tell us how you like to travel. We will sketch a smarter route across destinations,
-              stays, and local experiences.
+            <h2 className="text-3xl font-semibold text-primary-foreground sm:text-4xl">
+              Ready to Discover India Differently?
+            </h2>
+            <p className="mx-auto mt-4 max-w-xl text-base text-primary-foreground/80 sm:text-lg">
+              Start planning a journey that goes beyond the usual tourist trails. Support local businesses, explore hidden gems, and experience India authentically.
             </p>
             <Link
               href={routes.tourist.planner}
               className={buttonVariants({
                 variant: "highlight",
-                className: "mt-8 h-11 px-5",
+                className: "mt-8 h-12 px-6 text-base",
               })}
             >
-              Start Planning
-              <ArrowRight className="size-4" />
+              Start Your Journey
+              <ArrowRight className="size-5" />
             </Link>
           </div>
         </PageContainer>
