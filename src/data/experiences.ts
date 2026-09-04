@@ -47,3 +47,7 @@ export const experiences: Experience[] = [
     isLocal: true,
   },
 ];
+
+export function getExperiencesByDestinationId(destinationId: string): Experience[] {
+  return experiences.filter((experience) => experience.destinationId === destinationId);
+}
