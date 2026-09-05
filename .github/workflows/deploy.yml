@@ -28,6 +28,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
       - name: Extract repository name for basePath
         id: repo-name
         run: echo "name=${GITHUB_REPOSITORY#*/}" >> $GITHUB_OUTPUT
