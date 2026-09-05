@@ -13,6 +13,19 @@ export type Destination = {
   tags: string[];
   isHiddenGem: boolean;
   crowdLevel: "low" | "moderate" | "high";
+  travelEssentials?: {
+    howToReach: {
+      airport: string;
+      railway: string;
+      localTransport: string;
+    };
+    bestTime: {
+      season: string;
+      description: string;
+    };
+    safetyTips: string[];
+    responsibleTravel: string[];
+  };
 };
 
 export type Hotel = {

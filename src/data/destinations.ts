@@ -13,6 +13,27 @@ export const destinations: Destination[] = [
     tags: ["Spiritual", "Beach", "Culture"],
     isHiddenGem: false,
     crowdLevel: "high",
+    travelEssentials: {
+      howToReach: {
+        airport: "Biju Patnaik Airport, Bhubaneswar (60 km)",
+        railway: "Puri Railway Station (well-connected)",
+        localTransport: "Auto-rickshaws, taxis, and local buses available"
+      },
+      bestTime: {
+        season: "October to March",
+        description: "Pleasant weather for temple visits and beach activities. Avoid peak summer months."
+      },
+      safetyTips: [
+        "Dress modestly when visiting temples",
+        "Be cautious during crowded Rath Yatra periods",
+        "Follow local guidance during beach activities"
+      ],
+      responsibleTravel: [
+        "Respect temple dress codes and photography rules",
+        "Support local artisans and food vendors",
+        "Keep beaches clean and avoid plastic waste"
+      ]
+    }
   },
   {
     id: "konark",
@@ -26,6 +47,27 @@ export const destinations: Destination[] = [
     tags: ["Heritage", "UNESCO", "Architecture"],
     isHiddenGem: false,
     crowdLevel: "moderate",
+    travelEssentials: {
+      howToReach: {
+        airport: "Biju Patnaik Airport, Bhubaneswar (65 km)",
+        railway: "Konark Railway Station (limited connectivity)",
+        localTransport: "Taxis and auto-rickshaws from Puri or Bhubaneswar"
+      },
+      bestTime: {
+        season: "October to February",
+        description: "Ideal weather for exploring the temple complex. Early morning visits recommended."
+      },
+      safetyTips: [
+        "Wear comfortable walking shoes for temple exploration",
+        "Carry water and sun protection",
+        "Follow designated pathways within the complex"
+      ],
+      responsibleTravel: [
+        "Respect the sacred nature of the temple",
+        "Do not touch or climb on temple structures",
+        "Support local guides for authentic historical information"
+      ]
+    }
   },
   {
     id: "bhubaneswar",
@@ -39,6 +81,27 @@ export const destinations: Destination[] = [
     tags: ["Temples", "City", "Food"],
     isHiddenGem: false,
     crowdLevel: "moderate",
+    travelEssentials: {
+      howToReach: {
+        airport: "Biju Patnaik Airport, Bhubaneswar (3 km)",
+        railway: "Bhubaneswar Railway Station (major junction)",
+        localTransport: "City buses, auto-rickshaws, and app-based cabs"
+      },
+      bestTime: {
+        season: "October to March",
+        description: "Comfortable weather for temple tours. Avoid extreme summer heat."
+      },
+      safetyTips: [
+        "Dress appropriately for temple visits",
+        "Be aware of your surroundings in crowded areas",
+        "Use reliable transportation for late-night travel"
+      ],
+      responsibleTravel: [
+        "Respect temple customs and protocols",
+        "Support local handicraft artisans",
+        "Choose eco-friendly accommodation options"
+      ]
+    }
   },
   {
     id: "chilika",
@@ -52,6 +115,27 @@ export const destinations: Destination[] = [
     tags: ["Nature", "Wildlife", "Lagoon"],
     isHiddenGem: true,
     crowdLevel: "low",
+    travelEssentials: {
+      howToReach: {
+        airport: "Biju Patnaik Airport, Bhubaneswar (100 km)",
+        railway: "Balugaon Railway Station (nearest)",
+        localTransport: "Boat services from Satapada and local buses"
+      },
+      bestTime: {
+        season: "November to February",
+        description: "Best season for bird watching and dolphin sightings. Pleasant boat rides."
+      },
+      safetyTips: [
+        "Follow boat safety guidelines",
+        "Carry life jackets when required",
+        "Stay on designated paths during wildlife viewing"
+      ],
+      responsibleTravel: [
+        "Maintain distance from wildlife",
+        "Do not litter in the lagoon",
+        "Support local boat operators and fishing communities"
+      ]
+    }
   },
   {
     id: "daringbadi",
@@ -65,6 +149,27 @@ export const destinations: Destination[] = [
     tags: ["Hill Station", "Nature", "Coffee"],
     isHiddenGem: true,
     crowdLevel: "low",
+    travelEssentials: {
+      howToReach: {
+        airport: "Biju Patnaik Airport, Bhubaneswar (200 km)",
+        railway: "Berhampur Railway Station (nearest)",
+        localTransport: "Local buses and hired taxis from major towns"
+      },
+      bestTime: {
+        season: "December to February",
+        description: "Ideal for viewing waterfalls and coffee plantations. Avoid monsoon season."
+      },
+      safetyTips: [
+        "Carry warm clothing for chilly evenings",
+        "Use local guides for waterfall visits",
+        "Stay on marked trails during forest walks"
+      ],
+      responsibleTravel: [
+        "Respect local coffee plantations",
+        "Do not disturb wildlife or natural habitats",
+        "Support local homestays and businesses"
+      ]
+    }
   },
   {
     id: "satkosia",
@@ -78,6 +183,27 @@ export const destinations: Destination[] = [
     tags: ["Wildlife", "Sanctuary", "River"],
     isHiddenGem: true,
     crowdLevel: "low",
+    travelEssentials: {
+      howToReach: {
+        airport: "Biju Patnaik Airport, Bhubaneswar (120 km)",
+        railway: "Angul Railway Station (nearest)",
+        localTransport: "Forest department vehicles and local transport"
+      },
+      bestTime: {
+        season: "November to April",
+        description: "Best for wildlife sightings and river activities. Avoid peak monsoon."
+      },
+      safetyTips: [
+        "Always accompany forest guides",
+        "Maintain safe distance from wildlife",
+        "Follow sanctuary rules and regulations"
+      ],
+      responsibleTravel: [
+        "Do not feed or disturb wildlife",
+        "Stay on designated safari paths",
+        "Support conservation efforts and local communities"
+      ]
+    }
   },
   {
     id: "raghurajpur",
@@ -91,6 +217,27 @@ export const destinations: Destination[] = [
     tags: ["Heritage", "Crafts", "Art"],
     isHiddenGem: true,
     crowdLevel: "low",
+    travelEssentials: {
+      howToReach: {
+        airport: "Biju Patnaik Airport, Bhubaneswar (15 km)",
+        railway: "Puri Railway Station (12 km)",
+        localTransport: "Auto-rickshaws and taxis from Puri or Bhubaneswar"
+      },
+      bestTime: {
+        season: "October to March",
+        description: "Pleasant weather for village walks and craft demonstrations. Year-round cultural experiences."
+      },
+      safetyTips: [
+        "Respect artisans' workspace and tools",
+        "Ask permission before taking photographs",
+        "Support fair trade when purchasing crafts"
+      ],
+      responsibleTravel: [
+        "Appreciate the time and skill artisans invest",
+        "Purchase directly from artists when possible",
+        "Learn about the cultural significance of crafts"
+      ]
+    }
   },
   {
     id: "bhitarkanika",
@@ -104,6 +251,27 @@ export const destinations: Destination[] = [
     tags: ["Mangrove", "Wildlife", "Coastal"],
     isHiddenGem: true,
     crowdLevel: "low",
+    travelEssentials: {
+      howToReach: {
+        airport: "Biju Patnaik Airport, Bhubaneswar (160 km)",
+        railway: "Bhadrak Railway Station (nearest)",
+        localTransport: "Boat services from Chandbali and local buses"
+      },
+      bestTime: {
+        season: "November to February",
+        description: "Ideal for crocodile sightings and bird watching. Avoid monsoon for safety."
+      },
+      safetyTips: [
+        "Follow official boat safety protocols",
+        "Maintain distance from crocodiles",
+        "Carry insect repellent and sun protection"
+      ],
+      responsibleTravel: [
+        "Do not disturb wildlife or nesting sites",
+        "Follow eco-friendly boat practices",
+        "Support local conservation programs"
+      ]
+    }
   },
 ];
 
