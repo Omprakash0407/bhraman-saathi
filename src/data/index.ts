@@ -11,3 +11,4 @@ export {
   type TripItinerary,
   type ItineraryDay,
 } from "@/data/planner";
+export { savedTrips, getSavedTripById, type SavedTrip } from "@/data/my-trips";

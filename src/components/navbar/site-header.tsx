@@ -12,6 +12,7 @@ import { cn } from "@/lib/utils";
 
 const navLinks = [
   { href: routes.public.explore, label: "Explore" },
+  { href: routes.tourist.myTrips, label: "My Trips" },
   { href: routes.tourist.planner, label: "Plan Trip" },
 ] as const;
 
