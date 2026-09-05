@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 type ExploreHeroProps = {
   onSearchChange: (query: string) => void;
-  onFilterChange: (filter: "all" | "hidden-gems" | "beach" | "heritage" | "nature" | "wildlife") => void;
+  onFilterChange: (filter: string) => void;
   activeFilter: string;
 };
 

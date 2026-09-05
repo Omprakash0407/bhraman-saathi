@@ -14,11 +14,9 @@ import { buttonVariants } from "@/components/ui/button";
 import { destinations, getHiddenGems } from "@/data";
 import { routes } from "@/lib/routes";
 
-type FilterType = "all" | "hidden-gems" | "beach" | "heritage" | "nature" | "wildlife";
-
 export default function ExplorePage() {
   const [searchQuery, setSearchQuery] = useState("");
-  const [activeFilter, setActiveFilter] = useState<FilterType>("all");
+  const [activeFilter, setActiveFilter] = useState<string>("all");
   const [selectedInterest, setSelectedInterest] = useState<string | null>(null);
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
 
@@ -82,8 +80,8 @@ export default function ExplorePage() {
   return (
     <main>
       <ExploreHero
-        onSearchChange={(query) => setSearchQuery(query)}
-        onFilterChange={(filter) => setActiveFilter(filter)}
+        onSearchChange={setSearchQuery}
+        onFilterChange={setActiveFilter}
         activeFilter={activeFilter}
       />
 
@@ -186,7 +184,7 @@ export default function ExplorePage() {
         <PageContainer>
           <div className="rounded-3xl bg-primary px-6 py-14 text-center text-primary-foreground sm:px-12">
             <h2 className="text-3xl font-semibold text-primary-foreground sm:text-4xl">
-              Found Somewhere You'd Love to Explore?
+              Found Somewhere You&apos;d Love to Explore?
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-base text-primary-foreground/80 sm:text-lg">
               Turn your destination into a personalized journey with Bhraman Saathi.
