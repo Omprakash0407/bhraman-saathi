@@ -1,4 +1,5 @@
 import type { Experience } from "@/types";
+import { getAssetPath } from "@/lib/utils";
 
 export const experiences: Experience[] = [
   {
@@ -8,8 +9,7 @@ export const experiences: Experience[] = [
     hostName: "Raghurajpur artisans",
     summary:
       "Watch scroll painters grind natural colours and try a miniature motif in a heritage crafts village.",
-    imageUrl:
-      "/images/experiences/pattachitra.jpg",
+    imageUrl: getAssetPath("/images/experiences/pattachitra.jpg"),
     durationHours: 3,
     price: 1800,
     currency: "INR",
@@ -23,8 +23,7 @@ export const experiences: Experience[] = [
     hostName: "Satapada boat collective",
     summary:
       "Join a morning route across the lagoon, look for dolphins, and share a simple catch-of-the-day breakfast.",
-    imageUrl:
-      "/images/experiences/chilika-cruise.jpg",
+    imageUrl: getAssetPath("/images/experiences/chilika-cruise.jpg"),
     durationHours: 4,
     price: 2500,
     currency: "INR",
@@ -38,8 +37,7 @@ export const experiences: Experience[] = [
     hostName: "Mukteshwar heritage guides",
     summary:
       "Walk the cluster of Kalinga temples at dusk and hear how stone carvers still shape the city’s skyline.",
-    imageUrl:
-      "/images/experiences/temple-walk.jpg",
+    imageUrl: getAssetPath("/images/experiences/temple-walk.jpg"),
     durationHours: 2.5,
     price: 1200,
     currency: "INR",

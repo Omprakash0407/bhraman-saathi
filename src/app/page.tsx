@@ -15,6 +15,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { destinations, experiences, getDestinationById, valuePropositions } from "@/data";
 import { brand } from "@/lib/brand";
 import { routes } from "@/lib/routes";
+import { getAssetPath } from "@/lib/utils";
 
 const featuredDestinations = destinations.slice(0, 4);
 const featuredExperiences = experiences.slice(0, 3);
@@ -24,7 +25,7 @@ export default function HomePage() {
     <main>
       <section className="relative isolate min-h-[34rem] overflow-hidden sm:min-h-[40rem]">
         <Image
-          src="/images/hero/hero-home.png"
+          src={getAssetPath("/images/hero/hero-home.png")}
           alt=""
           fill
           priority
