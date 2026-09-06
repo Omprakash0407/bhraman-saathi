@@ -1,5 +1,5 @@
 export const brand = {
-  name: "Viram",
+  name: "Virām",
   tagline: "Your intelligent companion for discovering, planning and experiencing travel.",
   shortDescription:
     "A smart tourism ecosystem connecting tourists, hotels, travel agencies, and local businesses.",

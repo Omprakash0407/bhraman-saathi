@@ -1,5 +1,5 @@
 /**
- * Chat types for Viram AI tourism assistant
+ * Chat types for Virām AI tourism assistant
  */
 
 export type MessageRole = "user" | "assistant";

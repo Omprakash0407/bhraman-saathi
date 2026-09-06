@@ -71,7 +71,7 @@ export default function HomePage() {
         <PageContainer>
           <SectionHeading
             eyebrow="Why us"
-            title="Why Viram?"
+            title="Why Virām?"
             description="A complete tourism ecosystem — not another hotel listing page."
           />
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">

@@ -12,7 +12,7 @@ export function EmptyState() {
       </div>
       <h2 className="text-2xl font-semibold text-foreground mb-3">No Saved Trips Yet</h2>
       <p className="max-w-md text-base text-muted-foreground mb-8">
-        Your personalized journeys will appear here. Start planning your first trip with Viram to discover India differently.
+        Your personalized journeys will appear here. Start planning your first trip with Virām to discover India differently.
       </p>
       <Link
         href={routes.tourist.planner}

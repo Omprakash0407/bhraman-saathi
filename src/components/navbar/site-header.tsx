@@ -25,7 +25,7 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background">
       <PageContainer className="flex h-16 items-center justify-between gap-4">
-        <Link href={routes.public.home} aria-label="Viram home">
+        <Link href={routes.public.home} aria-label="Virām home">
           <BrandMark />
         </Link>
 

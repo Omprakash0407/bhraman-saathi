@@ -123,7 +123,7 @@ export function ChatWindow({ isOpen, onClose, className }: ChatWindowProps) {
           <div>
             <h3 className="text-sm font-semibold text-foreground">Saathi</h3>
             <p className="text-xs text-muted-foreground">
-              Your Viram travel companion
+              Your Virām travel companion
             </p>
           </div>
         </div>

@@ -18,7 +18,7 @@ export function MyTripsHero() {
           Your Personalized Trips
         </h1>
         <p className="mt-3 max-w-2xl text-base text-muted-foreground sm:text-lg">
-          Revisit your saved Viram journeys, review your personalized itineraries, and plan your next adventure.
+          Revisit your saved Virām journeys, review your personalized itineraries, and plan your next adventure.
         </p>
       </PageContainer>
     </section>

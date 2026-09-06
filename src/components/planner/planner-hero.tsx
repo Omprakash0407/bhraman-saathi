@@ -9,7 +9,7 @@ export function PlannerHero() {
             Plan a Trip That Feels Like Yours
           </h1>
           <p className="mt-4 text-lg text-muted-foreground">
-            Tell us how you like to travel, and Viram will shape a personalized journey around your interests, time, and budget.
+            Tell us how you like to travel, and Virām will shape a personalized journey around your interests, time, and budget.
           </p>
         </div>
       </PageContainer>

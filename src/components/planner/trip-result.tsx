@@ -35,7 +35,7 @@ export function TripResult({ itinerary, onReset }: TripResultProps) {
             </Button>
           </div>
           <p className="text-muted-foreground">
-            Your Viram plan, crafted around your preferences
+            Your Virām plan, crafted around your preferences
           </p>
         </div>
 

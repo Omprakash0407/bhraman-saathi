@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Explore Destinations | Viram",
-  description: "Discover destinations, hidden gems, and authentic places across India with Viram.",
+  title: "Explore Destinations | Virām",
+  description: "Discover destinations, hidden gems, and authentic places across India with Virām.",
 };
 
 export default function ExploreLayout({
