@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { BrandMark } from "@/components/common/brand-mark";
 import { PageContainer } from "@/components/common/page-container";
@@ -12,17 +13,19 @@ import { cn } from "@/lib/utils";
 
 const navLinks = [
   { href: routes.public.explore, label: "Explore" },
+  { href: routes.public.experiences, label: "Experiences" },
   { href: routes.tourist.myTrips, label: "My Trips" },
   { href: routes.tourist.planner, label: "Plan Trip" },
 ] as const;
 
 export function SiteHeader() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
 
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-background">
       <PageContainer className="flex h-16 items-center justify-between gap-4">
-        <Link href={routes.public.home} aria-label="Bhraman Saathi home">
+        <Link href={routes.public.home} aria-label="Viram home">
           <BrandMark />
         </Link>
 
@@ -31,7 +34,12 @@ export function SiteHeader() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
+              className={cn(
+                "text-sm font-medium transition-colors",
+                pathname === link.href
+                  ? "text-foreground"
+                  : "text-muted-foreground hover:text-foreground"
+              )}
             >
               {link.label}
             </Link>
@@ -68,7 +76,12 @@ export function SiteHeader() {
             <Link
               key={link.href}
               href={link.href}
-              className="py-1 text-sm font-medium text-foreground"
+              className={cn(
+                "py-1 text-sm font-medium",
+                pathname === link.href
+                  ? "text-foreground"
+                  : "text-foreground"
+              )}
               onClick={() => setIsOpen(false)}
             >
               {link.label}

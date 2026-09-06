@@ -32,7 +32,7 @@ export function HowItWorks() {
       <PageContainer>
         <SectionHeading
           eyebrow="Process"
-          title="How Bhraman Saathi Works"
+          title="How Viram Works"
           description="From preferences to personalized itineraries in four simple steps."
         />
         <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-4">

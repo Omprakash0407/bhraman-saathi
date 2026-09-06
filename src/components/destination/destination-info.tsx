@@ -2,6 +2,7 @@ import { MapPin, Clock, DollarSign } from "lucide-react";
 
 import { PageContainer } from "@/components/common/page-container";
 import { SectionHeading } from "@/components/common/section-heading";
+import { OpenInMapsButton } from "@/components/common/open-in-maps-button";
 import type { Destination } from "@/types";
 
 type DestinationInfoProps = {
@@ -36,9 +37,14 @@ export function DestinationInfo({ destination }: DestinationInfoProps) {
             <div className="space-y-3">
               <div className="flex items-start gap-3">
                 <MapPin className="size-5 text-muted-foreground mt-0.5" />
-                <div>
+                <div className="flex-1">
                   <p className="text-sm font-medium text-foreground">Location</p>
                   <p className="text-sm text-muted-foreground">{destination.location}, {destination.region}</p>
+                  <OpenInMapsButton
+                    latitude={destination.locationCoordinates.latitude}
+                    longitude={destination.locationCoordinates.longitude}
+                    className="mt-2"
+                  />
                 </div>
               </div>
               

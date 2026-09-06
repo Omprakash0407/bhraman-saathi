@@ -187,7 +187,7 @@ export default function ExplorePage() {
               Found Somewhere You&apos;d Love to Explore?
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-base text-primary-foreground/80 sm:text-lg">
-              Turn your destination into a personalized journey with Bhraman Saathi.
+              Turn your destination into a personalized journey with Viram.
             </p>
             <Link
               href={routes.tourist.planner}

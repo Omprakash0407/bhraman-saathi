@@ -3,7 +3,6 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 import { PageContainer } from "@/components/common/page-container";
-import { SearchBar } from "@/components/common/search-bar";
 import { SectionHeading } from "@/components/common/section-heading";
 import { QuickPlannerCTA } from "@/components/common/quick-planner-cta";
 import { HiddenGems } from "@/components/common/hidden-gems";
@@ -48,7 +47,6 @@ export default function HomePage() {
             An AI-powered travel companion that helps you plan personalised trips, uncover hidden
             gems, and support local tourism businesses.
           </p>
-          <SearchBar className="mt-8 max-w-2xl" />
         </PageContainer>
       </section>
 
@@ -73,7 +71,7 @@ export default function HomePage() {
         <PageContainer>
           <SectionHeading
             eyebrow="Why us"
-            title="Why Bhraman Saathi?"
+            title="Why Viram?"
             description="A complete tourism ecosystem — not another hotel listing page."
           />
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">

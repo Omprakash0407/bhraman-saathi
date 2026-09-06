@@ -73,7 +73,7 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
               Plan a Trip to {destination.name}
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-base text-primary-foreground/80 sm:text-lg">
-              Turn {destination.name} into a personalized journey with Bhraman Saathi. Let us help you plan the perfect itinerary.
+              Turn {destination.name} into a personalized journey with Viram. Let us help you plan the perfect itinerary.
             </p>
             <Link
               href={routes.tourist.planner}

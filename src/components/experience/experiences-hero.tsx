@@ -2,7 +2,7 @@ import { Compass } from "lucide-react";
 
 import { PageContainer } from "@/components/common/page-container";
 
-export function MyTripsHero() {
+export function ExperiencesHero() {
   return (
     <section className="bg-surface py-12 sm:py-16">
       <PageContainer>
@@ -11,14 +11,14 @@ export function MyTripsHero() {
             <Compass className="size-5" />
           </div>
           <p className="text-caption font-medium uppercase tracking-[0.18em] text-highlight">
-            Your Journeys
+            Local Experiences
           </p>
         </div>
         <h1 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-          Your Personalized Trips
+          Experience India, Locally
         </h1>
         <p className="mt-3 max-w-2xl text-base text-muted-foreground sm:text-lg">
-          Revisit your saved Viram journeys, review your personalized itineraries, and plan your next adventure.
+          Meet local makers, discover authentic traditions, and experience destinations beyond the usual tourist trail.
         </p>
       </PageContainer>
     </section>

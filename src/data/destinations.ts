@@ -13,6 +13,10 @@ export const destinations: Destination[] = [
     tags: ["Spiritual", "Beach", "Culture"],
     isHiddenGem: false,
     crowdLevel: "high",
+    locationCoordinates: {
+      latitude: 19.8135,
+      longitude: 85.8312,
+    },
     travelEssentials: {
       howToReach: {
         airport: "Biju Patnaik Airport, Bhubaneswar (60 km)",
@@ -46,6 +50,10 @@ export const destinations: Destination[] = [
     tags: ["Heritage", "UNESCO", "Architecture"],
     isHiddenGem: false,
     crowdLevel: "moderate",
+    locationCoordinates: {
+      latitude: 19.8876,
+      longitude: 86.1250,
+    },
     travelEssentials: {
       howToReach: {
         airport: "Biju Patnaik Airport, Bhubaneswar (65 km)",
@@ -79,6 +87,10 @@ export const destinations: Destination[] = [
     tags: ["Temples", "City", "Food"],
     isHiddenGem: false,
     crowdLevel: "moderate",
+    locationCoordinates: {
+      latitude: 20.2961,
+      longitude: 85.8245,
+    },
     travelEssentials: {
       howToReach: {
         airport: "Biju Patnaik Airport, Bhubaneswar (3 km)",
@@ -112,6 +124,10 @@ export const destinations: Destination[] = [
     tags: ["Nature", "Wildlife", "Lagoon"],
     isHiddenGem: true,
     crowdLevel: "low",
+    locationCoordinates: {
+      latitude: 19.7183,
+      longitude: 85.3183,
+    },
     travelEssentials: {
       howToReach: {
         airport: "Biju Patnaik Airport, Bhubaneswar (100 km)",
@@ -145,6 +161,10 @@ export const destinations: Destination[] = [
     tags: ["Hill Station", "Nature", "Coffee"],
     isHiddenGem: true,
     crowdLevel: "low",
+    locationCoordinates: {
+      latitude: 19.3670,
+      longitude: 84.1630,
+    },
     travelEssentials: {
       howToReach: {
         airport: "Biju Patnaik Airport, Bhubaneswar (200 km)",
@@ -178,6 +198,10 @@ export const destinations: Destination[] = [
     tags: ["Wildlife", "Sanctuary", "River"],
     isHiddenGem: true,
     crowdLevel: "low",
+    locationCoordinates: {
+      latitude: 20.5833,
+      longitude: 84.7667,
+    },
     travelEssentials: {
       howToReach: {
         airport: "Biju Patnaik Airport, Bhubaneswar (120 km)",
@@ -211,6 +235,10 @@ export const destinations: Destination[] = [
     tags: ["Heritage", "Crafts", "Art"],
     isHiddenGem: true,
     crowdLevel: "low",
+    locationCoordinates: {
+      latitude: 19.9167,
+      longitude: 85.8333,
+    },
     travelEssentials: {
       howToReach: {
         airport: "Biju Patnaik Airport, Bhubaneswar (15 km)",
@@ -244,6 +272,10 @@ export const destinations: Destination[] = [
     tags: ["Mangrove", "Wildlife", "Coastal"],
     isHiddenGem: true,
     crowdLevel: "low",
+    locationCoordinates: {
+      latitude: 20.7333,
+      longitude: 86.9000,
+    },
     travelEssentials: {
       howToReach: {
         airport: "Biju Patnaik Airport, Bhubaneswar (160 km)",

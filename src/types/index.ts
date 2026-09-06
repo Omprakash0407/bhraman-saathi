@@ -13,6 +13,10 @@ export type Destination = {
   tags: string[];
   isHiddenGem: boolean;
   crowdLevel: "low" | "moderate" | "high";
+  locationCoordinates: {
+    latitude: number;
+    longitude: number;
+  };
   travelEssentials?: {
     howToReach: {
       airport: string;
@@ -46,13 +50,23 @@ export type Experience = {
   title: string;
   destinationId: string;
   hostName: string;
+  hostType: "artisan" | "guide" | "family-workshop" | "boat-collective" | "heritage-guides";
   summary: string;
+  description: string;
   imageUrl: string;
   durationHours: number;
   price: number;
   currency: "INR";
   rating: number;
   isLocal: boolean;
+  category: "culture" | "heritage" | "food" | "crafts" | "nature" | "local-experiences";
+  whatYoullExperience: string[];
+  responsibleTourism: string;
+  locationName: string;
+  locationCoordinates: {
+    latitude: number;
+    longitude: number;
+  };
 };
 
 export type TravelPackage = {

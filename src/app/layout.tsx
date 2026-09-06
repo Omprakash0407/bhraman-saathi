@@ -3,6 +3,7 @@ import { Geist_Mono, Plus_Jakarta_Sans } from "next/font/google";
 
 import { SiteFooter } from "@/components/footer/site-footer";
 import { SiteHeader } from "@/components/navbar/site-header";
+import { ChatProvider } from "@/components/chat/chat-provider";
 import { siteMetadata } from "@/lib/brand";
 
 import "./globals.css";
@@ -41,6 +42,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           {children}
         </div>
         <SiteFooter />
+        <ChatProvider />
       </body>
     </html>
   );
