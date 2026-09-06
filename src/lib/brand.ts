@@ -12,3 +12,12 @@ export const siteMetadata = {
   },
   description: brand.tagline,
 } as const;
+
+/**
+ * Placeholder URL for the Local Suggestions Google Form.
+ * This will be replaced with the actual Google Form URL when created.
+ *
+ * Intended workflow:
+ * Local person → Google Form → Google Sheet → Manual verification by Virām team → Approved suggestion added to destination
+ */
+export const LOCAL_SUGGESTION_FORM_URL = "https://forms.google.com/placeholder-local-suggestions-form";

@@ -8,6 +8,7 @@ import { QuickPlannerCTA } from "@/components/common/quick-planner-cta";
 import { HiddenGems } from "@/components/common/hidden-gems";
 import { HowItWorks } from "@/components/common/how-it-works";
 import { BusinessEmpowerment } from "@/components/common/business-empowerment";
+import { LocalSuggestionsHero } from "@/components/local-suggestions/local-suggestions-hero";
 import { DestinationCard } from "@/components/destination/destination-card";
 import { ExperienceCard } from "@/components/experience/experience-card";
 import { buttonVariants } from "@/components/ui/button";
@@ -121,6 +122,8 @@ export default function HomePage() {
       <HowItWorks />
 
       <BusinessEmpowerment />
+
+      <LocalSuggestionsHero />
 
       <section className="pb-16 sm:pb-20">
         <PageContainer>

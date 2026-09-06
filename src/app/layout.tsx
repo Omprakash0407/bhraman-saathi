@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import { Geist_Mono, Plus_Jakarta_Sans } from "next/font/google";
 
 import { SiteFooter } from "@/components/footer/site-footer";
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
   description: siteMetadata.description,
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="en"

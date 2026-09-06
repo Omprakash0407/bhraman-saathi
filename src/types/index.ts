@@ -95,3 +95,12 @@ export type Review = {
   entityType: "destination" | "hotel" | "experience";
   entityId: string;
 };
+
+export type LocalSuggestion = {
+  id: string;
+  destinationId: string;
+  category: "rituals-traditions" | "tribes-communities" | "festivals-fairs" | "traditional-food" | "crafts-artisans" | "village-customs" | "local-music-dance" | "cultural-etiquette" | "local-stories";
+  title: string;
+  description: string;
+  culturalContext?: string;
+};

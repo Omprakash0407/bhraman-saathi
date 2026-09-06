@@ -9,9 +9,10 @@ import { RelatedDestinations } from "@/components/destination/related-destinatio
 import { PageContainer } from "@/components/common/page-container";
 import { SectionHeading } from "@/components/common/section-heading";
 import { ExperienceCard } from "@/components/experience/experience-card";
+import { LocalSuggestionsSection } from "@/components/local-suggestions/local-suggestions-section";
 import { SiteFooter } from "@/components/footer/site-footer";
 import { buttonVariants } from "@/components/ui/button";
-import { getDestinationById, getExperiencesByDestinationId, destinations } from "@/data";
+import { getDestinationById, getExperiencesByDestinationId, getLocalSuggestionsByDestinationId, destinations } from "@/data";
 import { routes } from "@/lib/routes";
 
 interface DestinationPageProps {
@@ -33,6 +34,7 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
   }
 
   const destinationExperiences = getExperiencesByDestinationId(destination.id);
+  const localSuggestions = getLocalSuggestionsByDestinationId(destination.id);
   const relatedDestinations = destinations.filter((dest) => dest.id !== destination.id);
 
   return (
@@ -64,6 +66,12 @@ export default async function DestinationPage({ params }: DestinationPageProps) 
           </PageContainer>
         </section>
       )}
+
+      {/* Local Suggestions */}
+      <LocalSuggestionsSection
+        suggestions={localSuggestions}
+        destinationName={destination.name}
+      />
 
       {/* Plan Your Visit CTA */}
       <section className="py-16 sm:py-20">

@@ -12,3 +12,4 @@ export {
   type ItineraryDay,
 } from "@/data/planner";
 export { savedTrips, getSavedTripById, type SavedTrip } from "@/data/my-trips";
+export { localSuggestions, getLocalSuggestionsByDestinationId, getLocalSuggestionById } from "@/data/local-suggestions";
